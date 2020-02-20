@@ -1,0 +1,19 @@
+commande_homepage:
+    path:     /
+    defaults: { _controller: CommandeBundle:Default:index }
+commande_ajout_client:
+    path:     /ajoutCmdClient
+    defaults: { _controller: CommandeBundle:gestioncmd:ajoutCmdClient }
+commande_affiche_admin:
+    path:     /afficheCmdAdmin
+    defaults: { _controller: CommandeBundle:gestioncmd:afficheCmdAdmin }
+commande_supprimer_admin:
+    path:     /supprimerCmdAdmin/{id}
+    defaults: { _controller: CommandeBundle:gestioncmd:supprimerCmdAdmin }
+
+lignecommande_ajout_client:
+    path:     /ajoutLigneClient
+    defaults: { _controller: CommandeBundle:lignecom:ajoutLigneClient }
+lignecommande_affiche_client:
+    path:     /afficherLigneClient
+    defaults: { _controller: CommandeBundle:lignecom:afficherLigneClient }
